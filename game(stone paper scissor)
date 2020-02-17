@@ -1,0 +1,37 @@
+import random
+print('a=[stone','paper','scissor]')
+print('b=[stone','paper','scissor]')
+def game2():
+    a=input("enter the input for a :")
+    b=input("enter the input for b :")
+#match draws
+    if(a=='stone' and b=='stone'):
+        print("match draws")
+        game2()
+    elif(a=='scissor' and b=='scissor'):
+        print("match draws")
+        game2()
+    elif(a=='paper' and b=='paper'):
+        print("match draws")
+        game2()
+#player a wins    
+    elif(a=='stone' and b=='scissor'):
+        print("player A wins")
+        game2()
+    elif(a=='paper' and b=='stone'):
+        print("player A wins")
+        game2()
+    elif(a=='scissor' and b=='paper'):
+        print("player A wins")
+        game2()
+#player b wins
+    elif(b=='stone' and a=='scissor'):
+        print("player B wins")
+        game2()
+    elif(b=='paper' and a=='stone'):
+        print("player B wins")
+        game2()
+    elif(b=='scissor' and a=='paper'):
+        print("player B wins")
+        game2()
+game2()
