@@ -1,0 +1,24 @@
+print("*************WELCOME TO OLA CAB***************")
+a=input("ENTER CUSTOMER NAME :")
+b=input("ENTER THE PLACE OF DEPARTURE :")
+c=input("ENTER THE DROPPING POINT :")
+d=int(input("ENTER THE KMS COVERED :"))
+print("CHOOSE THE CAR TYPE 1.MICRO 2.MINI 3.SEDIAN 4.SUV")
+e=int(input("ENTER THE TYPE OF CAR :"))
+if(e==1):
+    s=(d*10)
+elif(e==2):
+    s=(d*20)
+elif(e==3):
+    s=(d*30)
+elif(e==4):
+    s=(d*40)
+else:
+    print("VALID INPUT")
+print("************************************************")
+print("* CUSTOMER NAME :",a)
+print("* DEPARTURE :",b)
+print("* DROPPING POINT :",c)
+print("* KMS COVERED :",d)
+print("* AMOUNT TO PAY :",  s)
+print("************************************************")
