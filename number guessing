@@ -1,0 +1,12 @@
+import random
+print("choose a number from 0 to 9")
+def game():
+    a=[1,2,3,4]
+    b=int(input("ENTER THE NUMBER:"))
+    c=random.choice([1,2,3,4])
+    if(b!=c):
+        print("you lose the game")
+        game()
+    else:
+        print("you win")
+game()
