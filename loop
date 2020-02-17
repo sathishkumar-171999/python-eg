@@ -1,0 +1,6 @@
+def lo():
+    a=input("enter the value of a")
+    if(a!='q'):
+        print(a)
+        lo()
+lo()
